@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Poppins&family=Roboto:wght@100;300;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <form class="form" id="enrollmentForm">
+                <div class="title">Student Registration Form</div>
+                <input type="text" name="username" id="username" placeholder="Name" required>
+                <input type="text" name="rollno" id="rollno" placeholder="Roll_No" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="text" name="image" id="image" placeholder="Image URL" required>
+                <input type="number" name="mobile" id="mobile" placeholder="Mobile Number" required>
+
+                <p>Gender</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" class="gen" name="gender" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" class="gen" name="gender" value="female" required>
+                <label for="o">Others</label>
+                <input type="radio" id="o" class="gen" name="gender" value="others" required>
+
+                <p>Skills</p>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" class="skills" name="skills" value="html">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" class="skills" name="skills" value="css">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="javascript" class="skills" name="skills" value="javascript">
+                
+                <button type="submit" class="btn btn-sm btn-primary" id="button">Register</button>
+                <button type="button" class="btn btn-sm btn-secondary" id="resetButton">Reset</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <div id="info" class="info"></div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
